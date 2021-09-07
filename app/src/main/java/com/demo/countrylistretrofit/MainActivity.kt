@@ -37,9 +37,6 @@ class MainActivity : AppCompatActivity() {
                 recyclerAdapter.notifyDataSetChanged()
             } else {
                 Toast.makeText(this, "Error in getting list", Toast.LENGTH_SHORT).show()
-                  println("");
-                println("değişti");
-
             }
         })
         viewModel.makeAPICall()

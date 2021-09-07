@@ -38,7 +38,8 @@ class MainActivity : AppCompatActivity() {
             } else {
                 Toast.makeText(this, "Error in getting list", Toast.LENGTH_SHORT).show()
                   println("");
-                println("////");
+                println("//asdasdasdas//");
+                 println("//assdasdaasdsddasdasdas//");
             }
         })
         viewModel.makeAPICall()

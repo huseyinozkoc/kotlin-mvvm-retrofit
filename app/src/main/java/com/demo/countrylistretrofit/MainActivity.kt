@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.demo.countrylistretrofit.adapter.CountryListAdapter
 import com.demo.countrylistretrofit.viewmodel.MainActivityViewModel
 import kotlinx.android.synthetic.main.activity_main.*
+import java.sql.DriverManager.println
 
 class MainActivity : AppCompatActivity() {
     lateinit var recyclerAdapter: CountryListAdapter
@@ -36,7 +37,7 @@ class MainActivity : AppCompatActivity() {
                 recyclerAdapter.notifyDataSetChanged()
             } else {
                 Toast.makeText(this, "Error in getting list", Toast.LENGTH_SHORT).show()
-
+                  println("");
             }
         })
         viewModel.makeAPICall()
